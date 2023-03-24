@@ -36,7 +36,7 @@ public class frmNodos extends javax.swing.JFrame {
 
         jLabel1.setText("Ingrese valor del nodo:");
 
-        btnApilar.setText("Apilar");
+        btnApilar.setText("Ingresar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -68,7 +68,7 @@ public class frmNodos extends javax.swing.JFrame {
                 .addComponent(txtLista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnApilar)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();

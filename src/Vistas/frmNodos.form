@@ -57,7 +57,7 @@
               <Component id="txtLista" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnApilar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="125" max="32767" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -75,7 +75,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnApilar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Apilar"/>
+        <Property name="text" type="java.lang.String" value="Ingresar"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
