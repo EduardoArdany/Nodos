@@ -1,25 +1,47 @@
+package Modelos;
 
-package modelos;
+import javax.swing.JOptionPane;
 
-
+/**
+ *
+ * @author umg
+ */
 public class Lista {
-Nodo primero;
-public void InsertarNodo(int dato){
-    Nodo nodoNuevo = new Nodo(dato);
-    if(primero == null){
-      primero = nodoNuevo;  
-    }
-    else {
-        nodoNuevo.siguiente = primero;
-        primero = nodoNuevo;
-    }
+ Nodo primero;
+ Nodo Auxiliar;
+ String cadena = "";
+ 
+ public void Apilar()
+ {
+     
+ }
+ public void Apilar(int dato)
+ {
+     Nodo nuevoNodo = new Nodo(dato);
+     
+     if(primero == null)
+     {
+         primero =nuevoNodo;
+     }
+     else
+     {
+         nuevoNodo.siguiente = primero;
+         primero = nuevoNodo;
+     }
+     JOptionPane.showMessageDialog(null, "Nodo APILADO");
+ }
+ 
+ public String Listar()
+ {
+     Auxiliar = primero;
+     cadena = "";
+     Auxiliar = primero;
+     while(Auxiliar != null)
+     {
+         cadena = cadena + "{" + Auxiliar.getDato()+"}";
+         Auxiliar = Auxiliar.siguiente;
+     }
+     return cadena;
+ }
 }
-public void ListarNodos(){
-    Nodo Auxiliar;
-    Auxiliar = primero;
-    while(Auxiliar!=null){
-        System.out.println(Auxiliar.getDato());
-        Auxiliar = Auxiliar.siguiente;
-    }
-}
-}
+

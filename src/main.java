@@ -1,18 +1,18 @@
-
-import modelos.Lista;
-
+import Controladores.NodoController;
+import Modelos.Lista;
+import Vistas.frmNodos;
+import Vistas.frmPrincipal;
 
 public class main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        Lista nuevaLista = new Lista();
-        nuevaLista.InsertarNodo(10);
-        nuevaLista.InsertarNodo(20);
-        nuevaLista.InsertarNodo(30);
-        nuevaLista.ListarNodos();
+        frmPrincipal VistaPrincipal = new frmPrincipal();
+        frmNodos VistaNodos = new frmNodos();
+        Lista NuevaLista = new Lista();
+        
+        //LEVANTAR EL CONTROLADOR
+        NodoController NuevoControlador = new NodoController(VistaPrincipal, VistaNodos, NuevaLista);
     }
     
 }
+

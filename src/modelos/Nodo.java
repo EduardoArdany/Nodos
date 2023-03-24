@@ -1,9 +1,8 @@
-
-package modelos;
+package Modelos;
 
 public class Nodo {
-    int dato;
-    Nodo siguiente;
+ int dato;
+ Nodo siguiente;
 
     public Nodo(int dato) {
         this.dato = dato;
@@ -25,6 +24,6 @@ public class Nodo {
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
     }
-
+ 
     
 }
